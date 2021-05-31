@@ -29,7 +29,7 @@ app.use(function(req, res, next) {
     res.header("Access-Control-Allow-Methods", "PUT, POST, GET, DELETE, OPTIONS");
     next();
 });
-const port=2452||process.env.PORT;
+var port = process.env.PORT || 2410;
 app.listen(port,()=>console.log("Server is running at port "+port));
 
 /******   REST API          ******/
